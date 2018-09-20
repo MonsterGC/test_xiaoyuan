@@ -1,7 +1,6 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
     "pages/youhua/youhua",
     "pages/tebie/tebie",
     "pages/me/me"
@@ -23,13 +22,13 @@
       },
       {
         "pagePath": "pages/index/index",
-        "text": "周边",
+        "text": "校园助手",
         "iconPath": "images/zhoubian1.png",
         "selectedIconPath": "images/zhoubian.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "课件操",
+        "pagePath": "pages/youhua/youhua",
+        "text": "校园友话",
         "iconPath": "images/ziyou1.png",
         "selectedIconPath": "images/ziyou.png"
       },

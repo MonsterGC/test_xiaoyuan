@@ -11,7 +11,7 @@ Page({
     iconArray: [{
         "iconUrl": 'https://blackboy.club/xiaoyuan/fenlei/A_01.png',
         "iconText": '校园友话',
-        "Url":"../../pages/youhua/youhua"
+        "Url": "../../pages/youhua/youhua"
       },
       {
         "iconUrl": 'https://blackboy.club/xiaoyuan/fenlei/A_02.png',
@@ -55,13 +55,18 @@ Page({
     duration: 1000
   },
   tel: function() {
-    wx:wx.makePhoneCall({
+    wx: wx.makePhoneCall({
       phoneNumber: '13336535215',
     })
   },
-  tebie:function(){
+  tebie: function() {
     wx.navigateTo({
       url: '../../pages/tebie/tebie',
+    })
+  },
+  youhua: function() {
+    wx.switchTab({
+      url: '../../pages/youhua/youhua'
     })
   }
 })

@@ -10,8 +10,16 @@
 <!-- 导航 -->
 <view class="category">
   <view class="category_item" wx:for="{{iconArray}}">
-    <navigator wx:if="{{index<=6}}" url='{{item.Url}}' hover-class="none">
-      <view  class="category_item_wrap">
+    <view wx:if="{{index==0}}" bindtap='youhua' class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="{{item.iconUrl}}" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>{{item.iconText}}</text>
+      </view>
+    </view>
+    <navigator wx:elif="{{index<=6}}" url='{{item.Url}}' hover-class="none">
+      <view class="category_item_wrap">
         <view class="icon_wrap">
           <image src="{{item.iconUrl}}" class="index_icon"></image>
         </view>
