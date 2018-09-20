@@ -1,0 +1,24 @@
+<!-- 顶部信息 -->
+<view class="dinbu">
+   <view>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+   </view>
+   <view class='tex_text'>
+      <text style='color: #fff;'>{{userInfo.nickName}}</text>
+   </view>
+</view>
+<view style='background:#fff;height:50px;width:100%;margin-top:10px;'>
+
+</view>
+<view style='background:#fff;height:50px;width:100%;margin-top:10px;'>
+
+</view>
+<view style='background:#fff;height:50px;width:100%;margin-top:10px;'>
+
+</view>
+<view style='background:#fff;height:50px;width:100%;margin-top:10px;'>
+
+</view>
+<view style='background:#fff;height:50px;width:100%;margin-top:10px;'>
+
+</view>

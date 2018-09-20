@@ -1,0 +1,55 @@
+<view>
+  <view class='font_01'>2018教师资格证报考指南</view>
+  <view style='width:100%;margin-bottom:40px;'>
+    <text class='font_02'>2017-12-23</text>
+  </view>
+  <view style='font-size:0.9rem;'>
+    <view>
+      <text style='margin-left:20px;'></text>2016年教师资格证考试平均通过率25.73%，大大低于改革前省考70%的通过率，统考改革后试题难度提升以及面试难度提高是通过绿地的主要原因
+    </view>
+    <view>
+      <text style='margin-left:20px;'></text>为提高教师从业人员的整体素质水准，全国统考考纲增加考试科目和考试内容，中学资格考生需额外考一门笔试，这使考试内容增加了近40%。
+    </view>
+    <view>
+      <text style='margin-left:20px;'></text>统考改革后没有统一的教材，国家只发布考试大纲，考生缺乏教材的情况下市面上出现了参差不齐的教材版本，教材编写质量方面不尽人意
+    </view>
+    <view>
+      <text style='margin-left:20px;'></text>全国统考改革后的教师资格证注重考生的综合素质能力，必考科目《综合素养》全方位考察考生的职业理念、文化素养等知识面，考试范围宽泛
+    </view>
+    <view style='margin-top:10px;margin-bottom:10px;'>
+      <image style='width:100%;' src='https://www.blackboy.club/xiaoyuan/tebie/tebie_01.jpg'></image>
+    </view>
+    <view>
+      <view>
+        <text style='margin-left:20px;'></text>一、难度提升</view>
+      <view>
+        <text style='margin-left:20px;'></text>2016年教师资格证考试平均通过率25.73%，大大低于改革前省考70%的通过率，统考改革后试题难度提升以及面试难度提高是通过绿地的主要原因
+      </view>
+    </view>
+    <view>
+      <view>
+        <text style='margin-left:20px;'></text>二、考试内容增多</view>
+      <view>
+        <text style='margin-left:20px;'></text>为提高教师从业人员的整体素质水准，全国统考考纲增加考试科目和考试内容，中学资格考生需额外考一门笔试，这使考试内容增加了近40%。
+      </view>
+    </view>
+    <view>
+      <view>
+        <text style='margin-left:20px;'></text>三、教材泛滥，质量偏低</view>
+      <view>
+        <text style='margin-left:20px;'></text>统考改革后没有统一的教材，国家只发布考试大纲，考生缺乏教材的情况下市面上出现了参差不齐的教材版本，教材编写质量方面不尽人意
+      </view>
+    </view>
+      <view>
+      <view>
+        <text style='margin-left:20px;'></text>四、考试范围大而杂乱</view>
+      <view>
+        <text style='margin-left:20px;'></text>全国统考改革后的教师资格证注重考生的综合素质能力，必考科目《综合素养》全方位考察考生的职业理念、文化素养等知识面，考试范围宽泛
+      </view>
+    </view>
+  </view>
+</view>
+
+<view style='font-size:0.8rem;color:#666;text-align:center;'>
+  <text>注:各地报考学历要求请以当地最新报名公告为准</text>
+</view>
