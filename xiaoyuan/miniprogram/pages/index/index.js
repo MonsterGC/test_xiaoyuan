@@ -10,18 +10,16 @@ Page({
     ],
     iconArray: [{
         "iconUrl": 'https://blackboy.club/xiaoyuan/fenlei/A_01.png',
-        "iconText": '校园友话',
-        "Url": "../../pages/youhua/youhua"
+        "iconText": '校园友话'
       },
       {
         "iconUrl": 'https://blackboy.club/xiaoyuan/fenlei/A_02.png',
-        "iconText": '校园助手',
-        "Url": "../../pages/youhua/youhua"
+        "iconText": '校园助手'
       },
       {
         "iconUrl": 'https://blackboy.club/xiaoyuan/fenlei/A_03.png',
         "iconText": '趣味校园',
-        "Url": "../../pages/youhua/youhua"
+        "Url": "../../pages/quwei/quwei"
       },
       {
         "iconUrl": 'https://blackboy.club/xiaoyuan/fenlei/A_04.png',
@@ -67,6 +65,11 @@ Page({
   youhua: function() {
     wx.switchTab({
       url: '../../pages/youhua/youhua'
+    })
+  },
+  zhusho:function(){
+    wx.switchTab({
+      url: '../../pages/zhusho/zhusho'
     })
   }
 })

@@ -1,15 +1,17 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/youhua/youhua",
+    "pages/zhusho/zhusho",
+    "pages/quwei/quwei",
     "pages/tebie/tebie",
+    "pages/youhua/youhua",
     "pages/me/me"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "首页",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "selectedColor": "#69C3AA",
@@ -21,7 +23,7 @@
         "selectedIconPath": "images/shoye.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/zhusho/zhusho",
         "text": "校园助手",
         "iconPath": "images/zhoubian1.png",
         "selectedIconPath": "images/zhoubian.png"

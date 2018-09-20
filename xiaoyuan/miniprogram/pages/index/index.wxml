@@ -18,6 +18,14 @@
         <text>{{item.iconText}}</text>
       </view>
     </view>
+    <view wx:elif="{{index==1}}" bindtap='zhusho' class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="{{item.iconUrl}}" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>{{item.iconText}}</text>
+      </view>
+    </view>
     <navigator wx:elif="{{index<=6}}" url='{{item.Url}}' hover-class="none">
       <view class="category_item_wrap">
         <view class="icon_wrap">
