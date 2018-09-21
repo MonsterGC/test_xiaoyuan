@@ -65,3 +65,8 @@
   background:#666;
   height:1px;
 }
+
+.quwei{
+  display: flex;
+  flex-direction: column;
+}

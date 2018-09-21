@@ -1,0 +1,58 @@
+<swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imageurl}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='xianxi01'>
+  <view style="margin-top:15px;color:#666;">
+    <view style='width:100%;'>{{title}}</view>
+    <view class='xianxi_01'>
+      <view>
+        <image style='width:20px;height:20px;' src='../../images/zhusho_miao.png'></image>
+      </view>
+      <view style="font-size:0.6rem;">
+        {{text}}
+      </view>
+    </view>
+    <view class="line"></view>
+  </view>
+  <view style='display: flex;flex-direction: row;height:30px;width:100%;'>
+    <view>
+      <image style='width:20px;height:20px;' src="../../images/weizhi.png"></image>
+    </view>
+    <view style="font-size:0.8rem;color:#666;">{{address}}</view>
+  </view>
+  <view class='gehen'></view>
+</view>
+<view style='display: flex;flex-direction: row;'>
+  <view style='display: flex;flex-direction: row;width:80%;height:65px;'>
+    <view>
+      <image style='width:55px;height:55px;margin:5px 0 0 10px;border-radius:6%;' src='{{url}}'></image>
+    </view>
+    <view style='display: flex;flex-direction: column;margin:5px 0 0 10px;'>
+      <view style="font-size:0.8rem;margin-bottom:5px;">{{imagetitle02}}</view>
+      <view style="font-size:0.7rem;width:100%;">{{titletext}}</view>
+    </view>
+  </view>
+  <view style='margin:45rpx 0 0 40rpx;' bindtap='tell'>
+    <image style='width:30px;height:30px;' src='../../images/tell.png'></image>
+  </view>
+</view>
+
+
+<view style="width:94%;margin:3%;">
+  <view style='margin-bottom:10px;font-size:1rem;'>店铺介绍</view>
+  <view style='font-size:0.9rem;color:rgb(48, 47, 47);'>{{imagetext}}</view>
+</view>
+
+<view style="width:96%;margin:2%;">
+  <view style='margin-bottom:10px;font-size:1rem;'>店铺图片</view>
+  <view style='display: flex;flex-direction: column;' wx:for="{{imageurl2}}">
+    <view>
+      <image style='width:94%;margin:3%;height:200px;' src='{{item}}'></image>
+    </view>
+  </view>
+</view>

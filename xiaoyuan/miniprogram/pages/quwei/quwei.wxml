@@ -1,6 +1,8 @@
-<!-- 底部导航 -->
+<view class='quwei' style='{{gif=="1"?"display:none;":""}}'>
+  <image style='width:100%;' src='https://www.blackboy.club/xiaoyuan/quwei/quwei.gif'></image>
+</view>
+<!-- 顶部导航 -->
 <view class='bottom'>
-  <view class='line'></view>
   <view class="category">
     <view class="category_item" wx:for="{{iconArray}}">
       <view class="category_item_wrap" bindtap='quuwei' data-Id="{{index}}">
@@ -13,4 +15,22 @@
       </view>
     </view>
   </view>
+</view>
+
+<view class='quwei_01'>
+
+  <view wx:for="{{iconArray[xuanId].Ztie}}">
+    <view class='quwei_02'>
+      <view style='margin:5px; display: flex;flex-direction: column;'>
+        <view>{{item.Title}}</view>
+        <view style="font-size:0.6rem;color:#666;margin-bottom:20px;">{{item.Time}}</view>
+        <view style='font-size:0.8rem;'>{{item.Text}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 发帖 -->
+<view class='fatie' bindtap='qw'>
+  <image style='width:60rpx;height:60rpx;' src='../../images/fatie.png'></image>
 </view>

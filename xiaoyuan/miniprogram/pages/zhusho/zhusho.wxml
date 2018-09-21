@@ -19,26 +19,27 @@
   <!-- 活动 -->
   <view wx:for="{{daohanY[daohanId].daohanHD}}">
     <view class='zhusho_01'>
-      <view style='width:100%;height:1rpx;opacity:0.3;background:#666;'></view>
+      <view class='zhusho_03'></view>
       <view class='zhusho_02'>
-        <view style='margin:10px 0 0 10px;width:80px;height:80px;'>
-          <image style='width:80px;border-radius:5px;height:80px;' src='{{item.Url}}'></image>
+        <view class='zhusho_04'>
+          <image class='img_01' src='{{item.Url}}'></image>
         </view>
-        <view style='margin:10px;height:80px;display:flex;flex-direction:column;'>
+        <view class='wei'>
           <view>{{item.Title}}</view>
-          <view style='display:flex;flex-direction:row;margin:10px 0 0 10px;'>
+          <view class='wei_02'>
             <view>
               <image style='width:20px;height:20px;' src='../../images/zhusho_miao.png'></image>
             </view>
             <view style="font-size:0.7rem;margin-left:3px;color:#666;">{{item.Text}}</view>
           </view>
-          <view style='display:flex;flex-direction:row;margin-top:10px;'>
+          <view class='xq'>
             <view>
               <image style='width:15px;height:15px;' src='../../images/weizhi.png'></image>
             </view>
-            <view style="font-size:0.6rem;margin-top:5px;width:100px;">{{item.Address}}</view>
+            <view class='address_01'>{{item.Address}}</view>
             <view>
-              <button style="width:70px;height:30px;margin-left:60px;font-size:0.9rem;color:white;background:rgb(227, 247, 141);line-height:30px;">详情></button>
+              <button bindtap='xianxi' data-url='{{item.Url}}' data-title='{{item.Title}}' data-text='{{item.Text}}' data-address='{{item.Address}}' data-imagetimage='{{item.Image[0].TImage}}' data-imagetell='{{item.Image[0].tell}}' data-imagetitle02='{{item.Image[0].Title02}}'
+                data-titletext='{{item.Image[0].TitleText}}' data-imageurl='{{item.Image[0].imageUrl}}' data-imageurl2='{{item.Image[0].imageUrl2}}' data-imagetext='{{item.Image[0].Text}}' class='btn'>详情></button>
             </view>
           </view>
         </view>

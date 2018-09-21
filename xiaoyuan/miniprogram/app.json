@@ -1,9 +1,13 @@
 {
   "pages": [
+    "pages/zhaoping/zhaoping",
     "pages/index/index",
     "pages/zhusho/zhusho",
+    "pages/xianxi/xianxi",
     "pages/quwei/quwei",
     "pages/tebie/tebie",
+    "pages/yhtie/yhtie",
+    "pages/qwtie/qwtie",
     "pages/youhua/youhua",
     "pages/me/me"
   ],

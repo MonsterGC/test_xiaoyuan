@@ -1,0 +1,26 @@
+.slide-image{
+  width: 100%;
+  height: 400rpx;
+}
+.xianxi01{
+  text-align: center;
+}
+.line{
+  width: 100%;
+  height: 1px;
+  background: #666;
+  opacity: 0.2;
+  margin-top:20px; 
+}
+.xianxi_01{
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-bottom: 10px;
+}
+.gehen{
+  width: 100%;
+  height: 5px;
+  background: rgb(189, 187, 187);
+  opacity: 0.3;
+}

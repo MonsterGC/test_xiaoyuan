@@ -43,3 +43,49 @@ swiper image {
   flex-direction: row;
   
 }
+.btn{
+  width:70px;
+  height:30px;
+  margin-left:60px;
+  font-size:0.9rem;
+  color:white;
+  background:rgb(227, 247, 141);
+  line-height:30px;
+}
+.address_01{
+  font-size:0.6rem;
+  margin-top:5px;
+  width:100px;
+}
+.xq{
+  display:flex;
+  flex-direction:row;
+  margin-top:10px;
+}
+.zhusho_03{
+  width:100%;
+  height:1rpx;
+  opacity:0.3;
+  background:#666;
+}
+.zhusho_04{
+  margin:10px 0 0 10px;
+  width:80px;
+  height:80px;
+}
+.img_01{
+  width:80px;
+  border-radius:5px;
+  height:80px;
+}
+.wei{
+  margin:10px;
+  height:80px;
+  display:flex;
+  flex-direction:column;
+}
+.wei_02{
+  display:flex;
+  flex-direction:row;
+  margin:10px 0 0 10px;
+}
