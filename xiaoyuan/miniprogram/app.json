@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/zhaoping/zhaoping",
     "pages/index/index",
     "pages/zhusho/zhusho",
+    "pages/zhaoping/zhaoping",
     "pages/xianxi/xianxi",
     "pages/quwei/quwei",
     "pages/tebie/tebie",
