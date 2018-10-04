@@ -77,19 +77,12 @@
 </view>
 <!-- 社团活动 -->
 <view>
-  <view>
-    <image style='width:100%;height:150px;' src='https://blackboy.club/xiaoyuan/huodon/h_01.jpg'></image>
-  </view>
-  <view>
-    <image style='width:100%;height:150px;' src='https://blackboy.club/xiaoyuan/huodon/h_02.jpg'></image>
-  </view>
-  <view>
-    <image style='width:100%;height:150px;' src='https://blackboy.club/xiaoyuan/huodon/h_03.jpg'></image>
-  </view>
-  <view>
-    <image style='width:100%;height:150px;' src='https://blackboy.club/xiaoyuan/huodon/h_04.jpg'></image>
-  </view>
-  <view>
-    <image style='width:100%;height:150px;' src='https://blackboy.club/xiaoyuan/huodon/h_05.jpg'></image>
-  </view>
+  <image style='width:100%;height:40px;' src='../../images/shetuan.png'></image>
 </view>
+<block>
+  <view wx:for="{{shetuan}}">
+      <view bindtap='shetuan' data-Id="{{index}}">
+        <image style='width:100%;height:150px;' src='{{item}}'></image>
+      </view>
+  </view>
+</block>

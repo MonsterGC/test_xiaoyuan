@@ -47,6 +47,7 @@ Page({
         "Url": "#"
       }
     ],
+    shetuan: [],
     indicatorDots: true,
     autoplay: true,
     interval: 2000,
@@ -67,9 +68,28 @@ Page({
       url: '../../pages/youhua/youhua'
     })
   },
-  zhusho:function(){
+  zhusho: function() {
     wx.switchTab({
       url: '../../pages/zhusho/zhusho'
     })
+  },
+  onLoad: function() {
+    wx.cloud.init()
+    const db = wx.cloud.database()
+    var that = this;
+    var shetuan = that.data.shetuan;
+    db.collection('shetuan').get({
+      success: function(res) {
+        that.setData({
+          shetuan : res.data[0].shetuan
+        })
+      }
+    })
+  },
+  shetuan:function(res){
+      console.log(res.currentTarget.dataset.id);
+      wx.navigateTo({
+        url: '../../pages/shetuan/shetuan?id=' + res.currentTarget.dataset.id,
+      })
   }
 })
