@@ -5,7 +5,9 @@
 
 <!-- 发信息 -->
 <view bindtap='yh' style='position: absolute;bottom:20px;right:20px;'>
-  <image style='width:30px;height:30px;' src='../../images/fatie.png'></image>
+  <button style='width:30px;height:30px;' bindgetuserinfo="getUserInfo" open-type="getUserInfo">
+  <image style='width:30px;height:30px;position: relative;left:-28rpx;' src='../../images/fatie.png'></image>
+  </button>
 </view>
 
 

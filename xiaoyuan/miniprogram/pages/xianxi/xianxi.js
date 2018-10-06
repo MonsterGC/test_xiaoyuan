@@ -27,6 +27,10 @@ Page({
     wx.setNavigationBarTitle({
       title: '信息实验室',
     })
+    wx.showLoading({
+      title: "数据加载中",
+      mask: true
+    })
     var address = this.data.address;
     var imagetell = this.data.imagetell;
     var imagetext = this.data.imagetext;
@@ -102,5 +106,8 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+  onReady: function () {
+    wx.hideLoading({})
   }
 })

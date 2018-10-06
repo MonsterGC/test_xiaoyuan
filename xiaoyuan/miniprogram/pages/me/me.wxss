@@ -1,20 +1,34 @@
-page{
-  background:rgb(223, 222, 222);
+page {
+  background: rgb(223, 222, 222);
 }
-.dinbu{
+
+.dinbu {
   width: 100%;
   height: 100px;
   background: rgb(44, 44, 44);
   display: flex;
   flex-direction: row;
 }
-.userinfo-avatar{
+
+.userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
-  margin: 30rpx;
   border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  margin: 30rpx;
+  margin-top: 50rpx;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.tex_text{
+.tex_text {
+  display: inline-block;
   margin: 30px;
+}
+
+.username_name {
+  position: absolute;
+  left: 25vw;
+  color: #fff;
 }

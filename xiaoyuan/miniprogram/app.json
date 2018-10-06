@@ -6,9 +6,9 @@
     "pages/xianxi/xianxi",
     "pages/yhtie/yhtie",
     "pages/quwei/quwei",
-    "pages/tebie/tebie",
-    "pages/qwtie/qwtie",
     "pages/youhua/youhua",
+    "pages/qwtie/qwtie",
+    "pages/tebie/tebie",
     "pages/me/me"
   ],
   "window": {

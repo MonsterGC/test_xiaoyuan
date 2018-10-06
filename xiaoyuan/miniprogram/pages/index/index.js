@@ -73,7 +73,11 @@ Page({
       url: '../../pages/zhusho/zhusho'
     })
   },
-  onLoad: function() {
+  onLoad: function(options) {
+    wx.showLoading({
+      title : "数据加载中",
+      mask : true
+    })
     wx.cloud.init()
     const db = wx.cloud.database()
     var that = this;
@@ -91,5 +95,8 @@ Page({
       wx.navigateTo({
         url: '../../pages/shetuan/shetuan?id=' + res.currentTarget.dataset.id,
       })
+  },
+  onReady:function(){
+    wx.hideLoading({})
   }
 })

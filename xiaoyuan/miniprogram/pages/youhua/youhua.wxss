@@ -16,13 +16,20 @@
   color: #666;
 }
 
-.hen::-webkit-scrollbar {
-    display: none;
+button {
+  background: none;
+  border: none;
+  border-radius: 50%;
 }
+
+.hen::-webkit-scrollbar {
+  display: none;
+}
+
 .shu {
   display: flex;
   flex-direction: row;
-  height:350px;
+  height: 350px;
 }
 
 .xuan {
@@ -38,35 +45,41 @@
   display: flex;
   flex-direction: column;
 }
+
 .hen_01::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-.tupian_img{
+
+.tupian_img {
   display: flex;
   flex-direction: row;
 }
-.tupian_text{
+
+.tupian_text {
   display: flex;
   flex-direction: column;
 }
-.font_text{
-  margin-left:33px;
+
+.font_text {
+  margin-left: 33px;
   font-size: 0.8rem;
 }
-.huifu{
+
+.huifu {
   display: flex;
   flex-direction: row;
   margin-left: 75%;
   margin-top: 20px;
 }
-.line{
-  width:100%;
-  opacity:0.2;
-  background:#666;
-  height:1px;
+
+.line {
+  width: 100%;
+  opacity: 0.2;
+  background: #666;
+  height: 1px;
 }
 
-.quwei{
+.quwei {
   display: flex;
   flex-direction: column;
 }

@@ -763,6 +763,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    wx.showLoading({
+      title: "数据加载中",
+      mask: true
+    })
     wx.setNavigationBarTitle({
       title: '校园助手',
     })
@@ -825,7 +829,9 @@ Page({
   onReachBottom: function() {
 
   },
-
+  onReady: function() {
+    wx.hideLoading({})
+  },
   /**
    * 用户点击右上角分享
    */
