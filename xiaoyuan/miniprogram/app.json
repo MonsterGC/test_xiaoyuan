@@ -4,9 +4,11 @@
     "pages/zhusho/zhusho",
     "pages/zhaoping/zhaoping",
     "pages/xianxi/xianxi",
+    "pages/youhua/youhua",
+    "pages/null/null",
+    "pages/xiaoXinxi/xiaoXinxi",
     "pages/yhtie/yhtie",
     "pages/quwei/quwei",
-    "pages/youhua/youhua",
     "pages/qwtie/qwtie",
     "pages/tebie/tebie",
     "pages/me/me"

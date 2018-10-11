@@ -24,22 +24,22 @@ Page({
       {
         "iconUrl": 'https://blackboy.club/xiaoyuan/fenlei/A_04.png',
         "iconText": '招聘会',
-        "Url": "../../pages/youhua/youhua"
+        "Url": "../../pages/null/null"
       },
       {
         "iconUrl": 'https://blackboy.club/xiaoyuan/fenlei/B_01.png',
         "iconText": '考研',
-        "Url": "../../pages/youhua/youhua"
+        "Url": "../../pages/null/null"
       },
       {
         "iconUrl": 'https://blackboy.club/xiaoyuan/fenlei/B_02.png',
         "iconText": '公务员',
-        "Url": "../../pages/youhua/youhua"
+        "Url": "../../pages/null/null"
       },
       {
         "iconUrl": 'https://blackboy.club/xiaoyuan/fenlei/B_03.png',
         "iconText": '校园服务',
-        "Url": "../../pages/youhua/youhua"
+        "Url": "../../pages/fuwu/fuwu"
       },
       {
         "iconUrl": 'https://blackboy.club/xiaoyuan/fenlei/B_04.png',
@@ -72,6 +72,17 @@ Page({
     wx.switchTab({
       url: '../../pages/zhusho/zhusho'
     })
+  },
+  navigatorTo:function(res){
+    if(res.currentTarget.dataset.id=="0"){
+      wx: wx.navigateTo({
+        url: '../../pages/xiaoXinxi/xiaoXinxi',
+      })
+    }else{
+      wx: wx.navigateTo({
+        url: '../../pages/null/null',
+      })
+    }
   },
   onLoad: function(options) {
     wx.showLoading({

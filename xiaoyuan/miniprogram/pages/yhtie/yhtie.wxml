@@ -1,3 +1,14 @@
-<view>
-
-</view>
+<form bindsubmit="formSubmit">
+  <picker-view indicator-style="height:50px;" style="width:100%;height:100px;text-align: center;" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{quwei}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+  <view class="inputView2">
+    <view class="intro-area">
+      <textarea class="weui-textarea" name="youhua" placeholder="发圈内容" style="height: 3.3em" maxlength="400" bindinput="areanumber" />
+      <view class="weui-textarea-counter">{{zishu}}/400</view>
+    </view>
+  </view>
+  <button style="margin-left: 15rpx; margin-right: 15rpx; margin-top: 50rpx; border-radius: 40rpx" type="primary" formType="submit">提交</button>
+</form>

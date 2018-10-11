@@ -24,9 +24,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    wx.setNavigationBarTitle({
-      title: '信息实验室',
-    })
     wx.showLoading({
       title: "数据加载中",
       mask: true
@@ -54,6 +51,9 @@ Page({
       title: options.title,
       titletext: options.titletext,
       url: options.url
+    })
+    wx.setNavigationBarTitle({
+      title: this.data.title,
     })
   },
 

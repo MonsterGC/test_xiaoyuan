@@ -12,12 +12,12 @@
     </view>
     <view>
       <text style='margin-left:20px;'></text>统考改革后没有统一的教材，国家只发布考试大纲，考生缺乏教材的情况下市面上出现了参差不齐的教材版本，教材编写质量方面不尽人意
-    </view>
+    </view> 
     <view>
       <text style='margin-left:20px;'></text>全国统考改革后的教师资格证注重考生的综合素质能力，必考科目《综合素养》全方位考察考生的职业理念、文化素养等知识面，考试范围宽泛
     </view>
     <view style='margin-top:10px;margin-bottom:10px;'>
-      <image style='width:100%;' src='https://www.blackboy.club/xiaoyuan/tebie/tebie_01.jpg'></image>
+      <image style='width:100%;150px;' src='https://www.blackboy.club/xiaoyuan/tebie/tebie_01.jpg'></image>
     </view>
     <view>
       <view>

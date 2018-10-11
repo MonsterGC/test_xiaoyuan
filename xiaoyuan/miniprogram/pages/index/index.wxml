@@ -2,7 +2,7 @@
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" width="100%" />
+      <image bindtap='navigatorTo' data-Id='{{index}}' src="{{item}}" class="slide-image" width="100%" />
     </swiper-item>
   </block>
 </swiper>
@@ -52,13 +52,13 @@
     <image class='img_laba' src='../../images/laba.png'></image>
   </view>
   <view class="tex_laba_view">
-    <text class="tex_laba">教师资格证报考指南</text>
+    <text class="tex_laba">教师资格证</text>
   </view>
   <view class='tex_dayu'>
     <image style='width:15px;height:15px;' src='../../images/dayu.png'></image>
   </view>
 </view>
-
+  
 <!-- 分类一~大活动 -->
 <view class='huodon_main'>
   <view style='display:flex;flex-direction: column;'>

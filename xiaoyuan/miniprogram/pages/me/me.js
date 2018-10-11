@@ -47,6 +47,13 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+    wx.setStorage({
+      key: 'userInfo',
+      data: this.data.userInfo,
+      success: function (res) {
+        console.log('异步保存成功')
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -95,5 +102,12 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+  QhuanCun:function(){
+    wx.clearStorage({
+      success:function(res){
+        console.log(res);
+      }
+    })
   }
 })
