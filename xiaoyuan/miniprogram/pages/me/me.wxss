@@ -1,13 +1,13 @@
 page {
-  background: rgb(223, 222, 222);
+  background:#fff;
 }
 
 .dinbu {
   width: 100%;
   height: 100px;
-  background: rgb(44, 44, 44);
+  background: rgb(0, 0, 0);
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
 }
 
 .userinfo-avatar {
@@ -16,8 +16,8 @@ page {
   border-radius: 50%;
   overflow: hidden;
   display: block;
-  margin: 30rpx;
-  margin-top: 50rpx;
+  margin-left: 300rpx;
+  margin-top: -250rpx;
   border: 2px solid #fff;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
@@ -29,6 +29,55 @@ page {
 
 .username_name {
   position: absolute;
-  left: 25vw;
+  left:33vw;
+  top: 20vw;
   color: #fff;
 }
+
+.dh{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  height: 200rpx;
+}
+.Bg_dh{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.xianshi{
+  height:250px;
+  overflow:scroll;
+}
+
+.xianshi::-webkit-scrollbar {
+  display: none;
+}
+
+.xuan{
+  text-decoration:underline;
+  color: #000;
+}
+
+.inputView2 {
+  border: 1px solid rgb(68, 208, 250);
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  height: 100px;
+}
+.intro-area {
+  border: 1px solid #ffffff;
+  padding: 8px;
+}
+
+.weui-textarea-counter {
+  width: 100px;
+  color: #e6e6e6;
+  float: right;
+}
+
+.weui-textarea-counter {
+  color: #e6e6e6;
+}
+

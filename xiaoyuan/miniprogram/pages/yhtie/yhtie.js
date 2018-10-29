@@ -115,7 +115,7 @@ Page({
       db.collection('youhua').add({
         // data 字段表示需新增的 JSON 数据
         data: {
-          Time: that.data.time,
+          time: that.data.time,
           Xuan: that.data.xuan,
           Youhua: e.detail.value.youhua,
           Name: that.data.userInfo.nickName,

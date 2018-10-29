@@ -1,0 +1,20 @@
+<form bindsubmit="formSubmit">
+
+<view style='width:100%;text-align:center;margin-top:20px;font-size:1.2rem;color:#666;'>相关信息</view>
+  <view class="inputView">
+    <input class="input" name="shangjin" placeholder="赏金" placeholder-style="color:#666" />
+  </view>
+  <view class="inputView">
+    <input class="input" name="wuzhong" placeholder="物重(大件/中件/小件)" placeholder-style="color:#666" />
+  </view>
+  <view class="inputView">
+    <input class="input" name="phone" placeholder="联系电话" placeholder-style="color:#666" />
+  </view>
+  <view class="inputView2">
+    <view class="intro-area">
+      <textarea class="weui-textarea" name="beizhu" placeholder="备注" style="height: 3.3em" maxlength="400" bindinput="areanumber" />
+      <view class="weui-textarea-counter">{{zishu}}/400</view>
+    </view>
+  </view>
+  <button style="margin-left: 15rpx; margin-right: 15rpx; margin-top: 50rpx; border-radius: 40rpx" type="primary" formType="submit">提交</button>
+</form>

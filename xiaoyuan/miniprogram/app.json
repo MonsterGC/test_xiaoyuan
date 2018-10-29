@@ -1,9 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/zhusho/zhusho",
+    "pages/fuwu/fuwu",
     "pages/zhaoping/zhaoping",
+    "pages/Ffuwu/Ffuwu",
     "pages/xianxi/xianxi",
+    "pages/zhusho/zhusho",
     "pages/youhua/youhua",
     "pages/null/null",
     "pages/xiaoXinxi/xiaoXinxi",

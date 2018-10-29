@@ -1,0 +1,64 @@
+.title {
+  text-align: center;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.beizhu {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.beizhu_01 {
+  width: 20%;
+  text-align: center;
+  color: rgb(36, 36, 36);
+}
+
+.xinxi_01 {
+  width: 49.8%;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  background: #666;
+}
+
+.daohan {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+}
+
+.daohan_01 {
+  width: 25%;
+  color: #666;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.line {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10rpx;
+  background: #666;
+  height: 1rpx;
+  opacity: 0.5;
+}
+
+.xuan {
+  text-decoration: underline;
+  color: black;
+}
+
+.hen { 
+  background: #fff;
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.hen::-webkit-scrollbar {
+  display: none;
+}

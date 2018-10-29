@@ -1,4 +1,75 @@
-<view>
+<!-- 地址管理
+<view class="my-address">
+  <block>
+    <view class="add-new-address" bindtap="editAddress">
+      <text class="icon">+</text>
+      <text>添加地址</text>
+    </view>
+  </block>
+</view> -->
+<!-- 导航 -->
+<view class='daohan'>
+  <block wx:for="{{name}}">
+    <view bindtap='fuwu' data-Id='{{index}}' class='daohan_01 {{index==xuanId?"xuan":""}}'>{{item}}</view>
+  </block>
+</view>
+<view class='line'></view>
 
+<!-- 发布 -->
+<view bindtap='fabu' style='position: fixed;right:20px;bottom:40px;'>
+  <button style='width:40px;height:40px;' bindgetuserinfo="getUserInfo" open-type="getUserInfo">
+    <image src="../../images/sc.png" style='width:40px;height:40px;position:relative;left:-13px;'></image>
+  </button>
+</view>
 
+<view wx:for="{{zong.data}}">
+  <view style='display: flex;height:100%;flex-direction: column;margin-top:10px;width:90%;margin-left:5%;'>
+    <view style='display: flex;flex-direction: row;margin:20px;'>
+      <view style='{{userInfo.nickName == undefined ? "" : "display:none" }}'>
+        <image src='../../images/me.jpg' style='width:40px;height:35px;'></image>
+      </view>
+      <view style='{{userInfo.nickName == undefined ? "display:none" : "" }}'>
+        <image src='{{item.url}}' style='width:40px;height:35px;'></image>
+      </view>
+      <view style='display: flex;flex-direction: column;'>
+        <view style='color:#666;font-size:0.9rem;margin-left:10px;'>{{item.name}}</view>
+        <view style='color:#666;font-size:0.6rem;margin-left:10px;'>{{item.time}}</view>
+      </view>
+    </view>
+    <view class='title'>
+      {{title}}
+    </view>
+    <view style='display: flex;flex-direction: column;color:#666;'>
+      <view class='beizhu'>
+        <view class='beizhu_01'>备注:</view>
+        <view style='width:78%;font-size:0.8rem;'>{{item.beizhu}}</view>
+      </view>
+      <view class='beizhu'>
+        <view class='beizhu_01'>赏金:</view>
+        <view style='width:78%;'>{{item.shangjin}}元</view>
+      </view>
+      <view class='beizhu'>
+        <view class='beizhu_01'>物重:</view>
+        <view style='width:78%;'>{{item.wuzhong}}</view>
+      </view>
+    </view>
+    <view style='display: flex;flex-direction: row;height:50px;margin-top:20px;'>
+      <view bindtap='{{item.name == userInfo.nickName ? "change":""}}' data-Id='{{item._id}}' data-Zhuantai='{{item.zhuantai}}' class='xinxi_01'>
+        <image src='{{item.changeImage}}' style='width:30px;height:30px;'></image>
+        <text style='color:#fff;'>{{item.zhuantai}}</text>
+      </view>
+
+      <view class='xinxi_01' style='margin-left:0.3%;{{item.zhuantai == "申请中" ? "" :"display:none" }}'>
+        <view bindtap='tell' data-Phone='{{item.phone}}'>
+          <image src='../../images/lianxi.png' style='width:30px;height:30px;'></image>
+          <text style='color:#fff;'>马上联系</text>
+        </view>
+      </view>
+
+      <view class='xinxi_01' bindtap='liao' style='margin-left:0.3%; {{item.zhuantai == "任务中" || item.zhuantai == "已完成" ? "":"display:none" }}'>
+        <image src='../../images/lianxi.png' style='width:30px;height:30px;'></image>
+        <text style='color:#fff;'>下次找你</text>
+      </view>
+    </view>
+  </view>
 </view>

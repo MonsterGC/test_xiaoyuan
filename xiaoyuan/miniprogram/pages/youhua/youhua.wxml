@@ -31,7 +31,7 @@
           {{liao.Youhua}}
         </view>
         <view style='display:flex;flex-direction:row;'>
-          <view style='font-size:0.6rem;margin-top: 20px;margin-left:30px;'>{{liao.Time}}</view>
+          <view style='font-size:0.6rem;margin-top: 20px;margin-left:30px;'>{{liao.time}}</view>
           <view bindtap='isShow' data-Id='{{liao._id}}' class='huifu'>
             <view class=''>
               <image style="width:20px;height:20px;" src='../../images/huifu.png'></image>
