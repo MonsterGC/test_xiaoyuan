@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/fuwu/fuwu",
     "pages/zhaoping/zhaoping",
     "pages/Ffuwu/Ffuwu",
     "pages/xianxi/xianxi",
@@ -9,6 +8,7 @@
     "pages/youhua/youhua",
     "pages/null/null",
     "pages/xiaoXinxi/xiaoXinxi",
+    "pages/fuwu/fuwu",
     "pages/yhtie/yhtie",
     "pages/quwei/quwei",
     "pages/qwtie/qwtie",

@@ -1,2 +1,16 @@
-<video style='width:100%;' autoplay="true" enable-danmu="true" danmuList="{{danmuList}}" page-gesture="true" src="https://www.blackboy.club/xiaoyuan/you/you.mp4">
-</video>
+<view style='margin:80rpx;'>
+  <audio src="https://www.blackboy.club/M/zal.mp3" poster="https://www.blackboy.club/M/ZeroIce.jpg" name="年轻的战场" author="ZeroIce" id="myAudio" controls loop="true"></audio>
+</view>
+
+<view style='display:flex;flex-direction: row;'>
+  <view style='margin-left:60px;' bindtap='show'>
+    <image style='width:200px;height:200px;' src='https://www.blackboy.club/M/yq.jpg'></image>
+    <text style='color:#666;margin-top:20px;'>联系电话:19924828970</text>
+  </view>
+  <view style='width:100px;margin-top:110px;'>
+    <image style='width:100px;height:90px;' src='https://www.blackboy.club/M/qi.gif'></image>
+  </view>
+</view>
+<view style='width:200px;margin-left:60px;'>
+  <button bindtap='tel' style='background:#666;color:#fff;'>直接联系</button>
+</view>

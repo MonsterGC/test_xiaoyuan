@@ -202,7 +202,7 @@ Page({
     var that = this;
     var liaoZy = that.data.liaoZy;
     var liuyan = that.data.liuyan;
-    db.collection('youhua').orderBy('Time', 'desc').get({
+    db.collection('youhua').orderBy('time', 'desc').get({
       success: function(res) {
         that.setData({
           liaoZy: res.data

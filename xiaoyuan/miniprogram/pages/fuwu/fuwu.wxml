@@ -7,6 +7,10 @@
     </view>
   </block>
 </view> -->
+<view bindtap='zhu' style='position:fixed;top:50px;right:20px;'>
+   <image style='width:30px;height:30px;' src='{{zhuUrl}}'></image>
+</view>
+
 <!-- 导航 -->
 <view class='daohan'>
   <block wx:for="{{name}}">

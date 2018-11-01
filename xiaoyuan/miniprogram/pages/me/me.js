@@ -10,7 +10,7 @@ Page({
     hasUserInfo: false,
     zong: [],
     time: util.formatTime(new Date),
-    zishu:"0",
+    zishu: "0",
     show: false,
     xuanId: "0",
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -37,6 +37,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    wx.showLoading({
+      title: "加载中...",
+      mask: true
+    })
     var that = this
     var zong = this.data.zong
     wx.cloud.init()
@@ -93,14 +97,46 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-
+    wx.hideLoading({})
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    // var that = this
+    // wx.cloud.init()
+    // const db = wx.cloud.database()
+    // if (this.data.xuanId == "0") {
+    //   db.collection("quwei").orderBy('time', 'desc').get({
+    //     success: function(res) {
+    //       that.setData({
+    //         zong: res.data
+    //       })
+    //     }
+    //   })
+    // } else if (this.data.xuanId == "1") {
+    //   db.collection("youhua").where({
+    //     name: that.data.userInfo.nickName
+    //   }).orderBy('time', 'desc').get({
+    //     success: function(res) {
+    //       that.setData({
+    //         zong: res.data
+    //       })
+    //     }
+    //   })
+    // } else if (this.data.xuanId == "2") {
+    //   db.collection("fuwu").where({
+    //     name: that.data.userInfo.nickName,
+    //     zhuantai: "申请中"
+    //   }).orderBy('time', 'desc').get({
+    //     success: function(res) {
+    //       that.setData({
+    //         zong: res.data
+    //       })
+    //     }
+    //   })
+    // }
   },
   QhuanCun: function() {
     wx.clearStorage({
@@ -128,58 +164,59 @@ Page({
     var zong = this.data.zong
     wx.cloud.init()
     const db = wx.cloud.database()
-    if(xuan == "fuwu"){
+    if (xuan == "fuwu") {
       db.collection(xuan).where({
-        name: that.data.userInfo.nickName
+        name: that.data.userInfo.nickName,
+        zhuantai: "申请中"
       }).orderBy('time', 'desc').get({
-        success: function (res) {
+        success: function(res) {
           that.setData({
             zong: res.data
           })
         }
       })
-    }else if(xuan == "youhua"){
+    } else if (xuan == "youhua") {
       db.collection(xuan).where({
         Name: that.data.userInfo.nickName
       }).orderBy('time', 'desc').get({
-        success: function (res) {
+        success: function(res) {
           that.setData({
             zong: res.data
           })
         }
       })
-    } else if(xuan == "quwei"){
+    } else if (xuan == "quwei") {
       db.collection(xuan).orderBy('time', 'desc').get({
-        success: function (res) {
+        success: function(res) {
           that.setData({
             zong: res.data
           })
         }
       })
-    } else{
+    } else {
       var show = that.data.show
-       that.setData({
-         show : true         
-       })
+      that.setData({
+        show: true
+      })
     }
   },
-  areanumber: function (e) {
+  areanumber: function(e) {
     this.setData({
       zishu: e.detail.value.length
     })
   },
-  formSubmit:function(res){
+  formSubmit: function(res) {
     var that = this
     wx.cloud.init()
     const db = wx.cloud.database()
     db.collection('kui').add({
       // data 字段表示需新增的 JSON 数据
       data: {
-        kui : res.detail.value.kui,
+        kui: res.detail.value.kui,
         name: that.data.userInfo.nickName,
         time: that.data.time
       },
-      success: function () {
+      success: function() {
         wx.showToast({
           title: '发布成功',
           icon: "success",
@@ -188,12 +225,90 @@ Page({
       }
     })
   },
-  del:function(){
+  del: function(res) {
+    var that = this
+    var xuanId = this.data.xuanId
     wx.showModal({
       title: "提示",
       content: "是否删除？",
-      success:function(){
-         
+      success: function(e) {
+        if (e.confirm == true) {
+          if (xuanId == "0") {
+            wx.showToast({
+              title: '请联系管理员删除',
+              icon: "none"
+            })
+          } else if (xuanId == "1") {
+            that.shan("youhua", res.currentTarget.dataset.id, xuanId);
+          }
+        }
+      }
+    })
+  },
+  shan: function(xuan, Id, xuanId) {
+    var that = this
+    wx.cloud.init()
+    const db = wx.cloud.database()
+    db.collection(xuan).doc(Id).remove({
+      success: function() {
+        if (that.data.xuanId == "0") {
+          db.collection("quwei").orderBy('time', 'desc').get({
+            success: function(res) {
+              that.setData({
+                zong: res.data
+              })
+            }
+          })
+        } else if (that.data.xuanId == "1") {
+          db.collection("youhua").where({
+            name: that.data.userInfo.nickName
+          }).orderBy('time', 'desc').get({
+            success: function(res) {
+              that.setData({
+                zong: res.data
+              })
+            }
+          })
+        } else if (that.data.xuanId == "2") {
+          db.collection("fuwu").where({
+            name: that.data.userInfo.nickName,
+            zhuantai: "申请中"
+          }).orderBy('time', 'desc').get({
+            success: function(res) {
+              that.setData({
+                zong: res.data
+              })
+            }
+          })
+        }
+      }
+    })
+  },
+  sq: function(res) {
+    var that = this
+    wx.cloud.init()
+    const db = wx.cloud.database()
+    wx.showModal({
+      title: "提示",
+      content: "是否记住号码,接单？",
+      success: function (e) {
+        if (e.confirm == true) {
+          db.collection('fuwu').doc(res.currentTarget.dataset.id).update({
+            // data 传入需要局部更新的数据
+            data: {
+              zhuantai: "任务中",
+              changeImage: "../../images/ing.png"
+            },
+            success: function (res) {
+              wx.navigateTo({
+                url: '../../pages/fuwu/fuwu',
+              })
+              wx.showToast({
+                title: '修改成功'
+              }, 1500)
+            }
+          })
+        }
       }
     })
   }

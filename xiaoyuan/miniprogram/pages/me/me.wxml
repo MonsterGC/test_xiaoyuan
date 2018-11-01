@@ -42,9 +42,14 @@
             <view style='width:18%;color:#666;'>时间:</view>
             <view style='width:80%;color:#666;'>{{item.time}}</view>
           </view>
-          <view bindtap='del' style='margin-left:85%;'>
+          <view bindtap='del' data-Id='{{item._id}}'  style='margin-left:85%;{{xuanId == 2 ? "display:none;": ""}}'>
             <image style='width:25px;height:25px;' src='../../images/delete.png'></image>
           </view>
+
+          <view bindtap='sq' data-Id='{{item._id}}'  style='margin-left:85%;{{xuanId == 2 ? "": "display:none;"}}'>
+            <image style='width:25px;height:25px;' src='../../images/sq.png'></image>
+          </view>
+
         </view>
       </block>
     </view>

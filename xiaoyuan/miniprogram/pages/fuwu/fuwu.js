@@ -12,6 +12,7 @@ Page({
     name: ['全部', '申请中', '任务中', '已完成'],
     xuanId: '0',
     userInfo: {},
+    zhuUrl: "../../images/zhu_02.png",
     zong: [],
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -30,6 +31,7 @@ Page({
     wx.setNavigationBarTitle({
       title: '校园服务',
     })
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -208,6 +210,13 @@ Page({
   onShow: function() {
     var that = this
     var userInfo = that.data.userInfo;
+    var zhuUrl = this.data.zhuUrl
+    setTimeout(
+      function() {
+        that.setData({
+          zhuUrl: "../../images/zhu.png"
+        })
+      }, 2000)
     wx.getStorage({
       key: 'userInfo',
       success: function(res) {
@@ -226,6 +235,22 @@ Page({
         that.setData({
           zong: res
         })
+      }
+    })
+  },
+  zhu: function() {
+    wx.showModal({
+      title: '温馨提示',
+      content: '校园跑腿本校学生都可以接单\n为保护大家权益\n发布任务时注意个人隐私\n接单直接通过电话联系\n任务完成发单人请点击任务完成',
+      showCancel: false,
+      confirmText: '已了解',
+      success: function(res) {
+        if (res.confirm == true) {
+          wx.showToast({
+            title: '非常完美\n欢迎进入本服务',
+            icon: "none"
+          })
+        }
       }
     })
   }

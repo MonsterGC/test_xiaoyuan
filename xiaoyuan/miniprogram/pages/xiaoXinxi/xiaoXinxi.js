@@ -17,8 +17,9 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-    
+  onReady: function (e) {
+    this.audioCtx = wx.createAudioContext('myAudio')
+    this.audioCtx.play()
   },
 
   /**
@@ -26,6 +27,16 @@ Page({
    */
   onShow: function () {
     
+  },
+  show:function(){
+    wx.previewImage({
+      urls: ["https://www.blackboy.club/M/yq.jpg"]
+    })
+  },
+  tel:function(){
+    wx.makePhoneCall({
+      phoneNumber: '19924828970',
+    })
   },
 
   /**

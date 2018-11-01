@@ -2,7 +2,6 @@
   <image style='width:100%;height:160px;' src='https://www.blackboy.club/xiaoyuan/youhua/youhua_01.jpg'></image>
 </view>
 
-
 <!-- 发信息 -->
 <view bindtap='yh' style='position: absolute;bottom:20px;right:20px;'>
   <button style='width:30px;height:30px;' bindgetuserinfo="getUserInfo" open-type="getUserInfo">
