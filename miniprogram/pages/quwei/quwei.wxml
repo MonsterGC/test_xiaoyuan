@@ -1,0 +1,32 @@
+<!-- 顶部导航 -->
+<view class='bottom'>
+  <view class="category">
+    <view class="category_item" wx:for="{{iconArray}}">
+      <view class="category_item_wrap" bindtap='quuwei' data-Id="{{index}}">
+        <view class="icon_wrap">
+          <image src="{{item.iconUrl}}" class="index_icon"></image>
+        </view>
+        <view class='category_item_text {{index==xuanId?"xuan":""}}'>
+          <text>{{item.iconText}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='quwei_01'>
+  <view wx:for="{{Ztie}}">
+    <view class='quwei_02'>
+      <view style='margin:5px; display: flex;flex-direction: column;'>
+        <view>{{item.title}}</view>
+        <view style="font-size:0.6rem;color:#666;margin-bottom:20px;">{{item.time}}</view>
+        <view style='font-size:0.8rem;'>{{item.quwei}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 发帖 -->
+<view class='fatie' bindtap='qw'>
+  <image style='width:60rpx;height:60rpx;' src='../../images/fatie.png'></image>
+</view>

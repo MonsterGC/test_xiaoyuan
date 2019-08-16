@@ -1,0 +1,70 @@
+<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+<block wx:else>
+  <!-- 顶部信息 -->
+  <view>
+    <image style='width:375px;height:150px;' src='../../images/bg.png'></image>
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='username_name'>
+      <view class='tex_text'>
+        <open-data type="userNickName"></open-data>
+      </view>
+    </view>
+  </view>
+  <view class='Bg_dh'>
+    <block wx:for="{{Xinxi}}">
+      <view bindtap='dianji' data-Id='{{index}}' class='dh'>
+        <view style='height:60px;'>
+          <image style='width:30px;height:30px;margin-top:15px;margin-left:30%;' src='{{item.url}}'></image>
+        </view>
+        <view style='font-size:0.8rem;color:#666;margin-left:15px;'>
+          <text class='{{index==xuanId ? "xuan":""}}'>{{item.name}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 显示 -->
+  <view style='{{xuanId == 3 ? "display:none;": ""}}' class='xianshi'>
+    <view style='width:95%;margin:2.5%;'>
+      <block wx:for="{{zong}}">
+        <view style='display:flex;margin-top:10px;flex-direction:column;border:1px;border-style:outset;'>
+          <view style='display:flex;flex-direction:row;margin-left:10px;margin-top:5px;'>
+            <view style='width:18%;color:#666; {{xuanId == 0 ? "": "display:none;"}}'>标题:</view>
+            <view style='width:18%;color:#666; {{xuanId == 1 ? "": "display:none;"}}'>友话:</view>
+            <view style='width:18%;color:#666; {{xuanId == 2 ? "": "display:none;"}}'>备注:</view>
+            <view style='width:80%;color:#666;{{xuanId == 0 ? "": "display:none;"}}'>{{item.title}}</view>
+            <view style='width:80%;color:#666;{{xuanId == 1 ? "": "display:none;"}}'>{{item.Youhua}}</view>
+            <view style='width:80%;color:#666;{{xuanId == 2 ? "": "display:none;"}}'>{{item.beizhu}}</view>
+          </view>
+          <view style='display:flex;flex-direction:row;margin-left:10px;margin-top:5px;'>
+            <view style='width:18%;color:#666;'>时间:</view>
+            <view style='width:80%;color:#666;'>{{item.time}}</view>
+          </view>
+          <view bindtap='del' data-Id='{{item._id}}'  style='margin-left:85%;{{xuanId == 2 ? "display:none;": ""}}'>
+            <image style='width:25px;height:25px;' src='../../images/delete.png'></image>
+          </view>
+
+          <view bindtap='sq' data-Id='{{item._id}}'  style='margin-left:85%;{{xuanId == 2 ? "": "display:none;"}}'>
+            <image style='width:25px;height:25px;' src='../../images/sq.png'></image>
+          </view>
+
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view style='{{xuanId == 3 ? "": "display:none;"}}'>
+    <form bindsubmit="formSubmit">
+      <view class="inputView2">
+        <view class="intro-area">
+          <textarea class="weui-textarea" name="kui" placeholder="反馈内容" style="height: 3.3em" maxlength="400" bindinput="areanumber" />
+          <view class="weui-textarea-counter">{{zishu}}/400</view>
+        </view>
+      </view>
+      <button style="margin-left: 15rpx; margin-right: 15rpx; margin-top: 50rpx; border-radius: 40rpx" type="primary" formType="submit">提交</button>
+    </form>
+  </view>
+
+</block>

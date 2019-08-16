@@ -1,0 +1,88 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image bindtap='navigatorTo' data-Id='{{index}}' src="{{item}}" class="slide-image" width="100%" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 导航 -->
+<view class="category">
+  <view class="category_item" wx:for="{{iconArray}}">
+    <view wx:if="{{index==0}}" bindtap='youhua' class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="{{item.iconUrl}}" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>{{item.iconText}}</text>
+      </view>
+    </view>
+    <view wx:elif="{{index==1}}" bindtap='zhusho' class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="{{item.iconUrl}}" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>{{item.iconText}}</text>
+      </view>
+    </view>
+    <navigator wx:elif="{{index<=6}}" url='{{item.Url}}' hover-class="none">
+      <view class="category_item_wrap">
+        <view class="icon_wrap">
+          <image src="{{item.iconUrl}}" class="index_icon"></image>
+        </view>
+        <view class="category_item_text">
+          <text>{{item.iconText}}</text>
+        </view>
+      </view>
+    </navigator>
+    <view wx:else bindtap='tel' class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="{{item.iconUrl}}" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>{{item.iconText}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 特别报道 -->
+<view class='tb_wid' bindtap='tebie'>
+  <view>
+    <image class='img_laba' src='../../images/laba.png'></image>
+  </view>
+  <view class="tex_laba_view">
+    <text class="tex_laba">教师资格证</text>
+  </view>
+  <view class='tex_dayu'>
+    <image style='width:15px;height:15px;' src='../../images/dayu.png'></image>
+  </view>
+</view>
+  
+<!-- 分类一~大活动 -->
+<view class='huodon_main'>
+  <view style='display:flex;flex-direction: column;'>
+    <view class='huodon_main02'>
+      <image style='width:100%;height:150px;' src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3083780143,1206715624&fm=26&gp=0.jpg'></image>
+    </view>
+    <view class='tex_two'>
+      <view class='two'>
+        <image style='width:100%;height:100%;' src='https://blackboy.club/xiaoyuan/main/main_02.jpg'></image>
+      </view>
+      <view class='two'>
+        <image style='width:100%;height:100%;' src='https://blackboy.club/xiaoyuan/main/main_03.jpg'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 社团活动 -->
+<view>
+  <image style='width:100%;height:40px;' src='../../images/shetuan.png'></image>
+</view>
+<block>
+  <view wx:for="{{shetuan}}">
+      <view bindtap='shetuan' data-Id="{{index}}">
+        <image style='width:100%;height:150px;' src='{{item}}'></image>
+      </view>
+  </view>
+</block>

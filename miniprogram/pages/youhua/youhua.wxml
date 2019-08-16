@@ -1,0 +1,78 @@
+<view>
+  <image style='width:100%;height:160px;' src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=160561281,1353973153&fm=26&gp=0.jpg'></image>
+</view>
+
+<!-- 发信息 -->
+<view bindtap='yh' style='position: absolute;bottom:20px;right:20px;'>
+  <button style='width:30px;height:30px;' bindgetuserinfo="getUserInfo" open-type="getUserInfo">
+    <image style='width:30px;height:30px;position: relative;left:-28rpx;' src='../../images/fatie.png'></image>
+  </button>
+</view>
+
+
+<view class='shu'>
+  <!--导航 -->
+  <view class='hen'>
+    <view wx:for="{{hendao}}">
+      <view bindtap='Dhendao' data-Id='{{index}}' class='hendao {{hendaoId == index ? "xuan":""}}'>{{item.name}}</view>
+    </view>
+  </view>
+  <!-- 聊天 -->
+  <view class='hen_01'>
+    <view wx:for="{{liaoZy}}" wx:for-item="liao">
+      <view class='tupian_text'>
+        <view class="tupian_img">
+          <image style='width:30px;height:30px;border-radius:20%' src='{{liao.Url}}'></image>
+          <view style='margin-left:6px;color:#666;'>{{liao.Name}}</view>
+          <view bindtap='Delete_HY' data-Id='{{liao._id}}' style='font-size:0.7rem;margin:10px;color:rgb(80, 233, 253);{{liao.Name == userInfo.nickName ? "":"display:none;"}}'>删除</view>
+        </view>
+        <view class="font_text">
+          {{liao.Youhua}}
+        </view>
+        <view style='display:flex;flex-direction:row;'>
+          <view style='font-size:0.6rem;margin-top: 20px;margin-left:30px;'>{{liao.time}}</view>
+          <view bindtap='isShow' data-Id='{{liao._id}}' class='huifu'>
+            <view class=''>
+              <image style="width:20px;height:20px;" src='../../images/huifu.png'></image>
+            </view>
+            <view style='font-size:0.9rem;color:#666;'>回复</view>
+          </view>
+        </view>
+        <!-- 回复 -->
+        <view style="display:flex;flex-direction: column;margin-left:35px;">
+          <view style='font-size:0.7rem;'>留言:</view>
+          <block wx:for="{{liuyan}}" wx:for-item="liu_yan">
+            <!-- <view bindtap='Delete' style='{{liu_yan.huifuName == userInfo.nickName ? "":"display:none;"}}'> -->
+              <view style='display:flex;flex-direction:column;'>
+                <view style='font-size:0.6rem;color:rgb(10, 185, 238); {{liu_yan.huifuId == liao._id ? "":"display:none;"}}'>{{liu_yan.huifuName}}:</view>
+                <view style='display:flex;flex-direction:row; {{liu_yan.huifuId == liao._id ? "":"display:none;"}}'>
+                   <view style='font-size:0.6rem; width:90%;'>{{liu_yan.huifu}}</view>
+                   <view bindtap='Delete' data-Id='{{liu_yan._id}}' style='margin-left:40px;{{liu_yan.huifuName == userInfo.nickName ? "":"display:none;"}}'>
+                      <image style='width:20px;height:20px;' src='../../images/delete.png'></image>
+                   </view>
+                </view>
+              </view>
+            <!-- </view> -->
+          </block>
+        </view>
+        <view class='line'></view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<block wx:if="{{isShow}}">
+  <form bindsubmit="formSubmit">
+    <view class="add_item_show">
+      <view class="buy_cont">
+        <view style='display:flex;flex-direction:row;'>
+          <view class="inputView">
+            <input class="input" name="huifu" auto-focus placeholder-style="color:#666" />
+          </view>
+          <button class='btn-class' formType="submit">发送</button>
+        </view>
+      </view>
+      <view bindtap='isHide' style='position:absolute;bottom:35px;right:10px; color:#666;'>x</view>
+    </view>
+  </form>
+</block>

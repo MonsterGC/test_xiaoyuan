@@ -1,0 +1,12 @@
+.font_01 {
+  font-weight: bold;
+  margin: 10px;
+}
+.font_02{
+  color: #666;
+  font-size: 0.6rem;
+  float:right; 
+}
+view{
+  margin-bottom: 15px;
+}

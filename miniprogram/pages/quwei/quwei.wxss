@@ -1,0 +1,70 @@
+.category {
+  padding: 15px 0 10px 0;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.category_item {
+  width: 25%;
+  float: left;
+}
+
+.category_item_wrap {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.icon_wrap {
+  width: 20px;
+  margin: 0 auto;
+}
+
+.index_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.category_item_text {
+  text-align: center;
+  font-size: 12px;
+  color: #737373;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #666;
+}
+
+.bottom {
+  width: 100%;
+  height: 120rpx;
+  position:fixed;
+  top: 0;
+}
+
+.xuan {
+  text-decoration: underline;
+}
+
+.quwei_01 {
+  display: flex;
+  flex-direction: column;
+  margin-top:120rpx; 
+}
+
+.quwei_02 {
+  display: flex;
+  flex-direction: column;
+  background: rgb(223, 222, 222);
+  margin: 3%;
+}
+.quwei{
+  margin-top: 120rpx;
+}
+.fatie{
+  position: fixed;
+  top: 80%;
+  right: 40rpx;
+}

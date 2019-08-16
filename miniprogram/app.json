@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/zhaoping/zhaoping",
+    "pages/Ffuwu/Ffuwu",
+    "pages/xianxi/xianxi",
+    "pages/zhusho/zhusho",
+    "pages/youhua/youhua",
+    "pages/null/null",
+    "pages/xiaoXinxi/xiaoXinxi",
+    "pages/fuwu/fuwu",
+    "pages/yhtie/yhtie",
+    "pages/quwei/quwei",
+    "pages/qwtie/qwtie",
+    "pages/tebie/tebie",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#69C3AA",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/shoye1.png",
+        "selectedIconPath": "images/shoye.png"
+      },
+      {
+        "pagePath": "pages/zhusho/zhusho",
+        "text": "校园助手",
+        "iconPath": "images/zhoubian1.png",
+        "selectedIconPath": "images/zhoubian.png"
+      },
+      {
+        "pagePath": "pages/youhua/youhua",
+        "text": "校园友话",
+        "iconPath": "images/ziyou1.png",
+        "selectedIconPath": "images/ziyou.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/me1.png",
+        "selectedIconPath": "images/me.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
