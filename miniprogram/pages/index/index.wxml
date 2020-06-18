@@ -63,14 +63,14 @@
 <view class='huodon_main'>
   <view style='display:flex;flex-direction: column;'>
     <view class='huodon_main02'>
-      <image style='width:100%;height:150px;' src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3083780143,1206715624&fm=26&gp=0.jpg'></image>
+      <image style='width:100%;height:150px;' src='http://img3.imgtn.bdimg.com/it/u=3445709427,4147686406&fm=26&gp=0.jpg'></image>
     </view>
     <view class='tex_two'>
       <view class='two'>
-        <image style='width:100%;height:100%;' src='https://blackboy.club/xiaoyuan/main/main_02.jpg'></image>
+        <image style='width:100%;margin:auto;height:100%;' src='http://img0.imgtn.bdimg.com/it/u=233256367,2346866843&fm=26&gp=0.jpg'></image>
       </view>
       <view class='two'>
-        <image style='width:100%;height:100%;' src='https://blackboy.club/xiaoyuan/main/main_03.jpg'></image>
+        <image style='width:100%;margin:auto;height:100%;' src='http://img4.imgtn.bdimg.com/it/u=1388919561,1938590857&fm=26&gp=0.jpg'></image>
       </view>
     </view>
   </view>

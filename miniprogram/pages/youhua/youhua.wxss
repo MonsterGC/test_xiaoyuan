@@ -115,7 +115,7 @@ button {
 }
 
 .inputView {
-  border: 1px solid rgb(68, 208, 250);
+  border: 1px solid #19be6b;
   height: 25px;
   border-radius: 20px;
   margin-right: 60px;
@@ -131,5 +131,5 @@ button {
   position: relative;
   top: 12px;
   left: -40px;
-  background: rgb(68, 208, 250);
+  background: #19be6b;
 }

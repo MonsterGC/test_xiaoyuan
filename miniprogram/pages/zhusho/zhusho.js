@@ -5,14 +5,9 @@ Page({
    */
   data: {
     imgUrls: [
-      'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3178807825,1649935393&fm=26&gp=0.jpg',
-      'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=379074395,2531916131&fm=26&gp=0.jpg',
-      'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=323754751,219249848&fm=26&gp=0.jpg',
-      'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1844858052,3617544489&fm=26&gp=0.jpg',
-      'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2794780850,1230521663&fm=15&gp=0.jpg',
-      'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1976065855,4031200125&fm=26&gp=0.jpg',
-      'hhttps://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1961991635,2271064741&fm=26&gp=0.jpg',
-      'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3003362404,4130990465&fm=26&gp=0.jpg'
+      'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3502117595,624914180&fm=26&gp=0.jpg',
+      'https://ns-strategy.cdn.bcebos.com/ns-strategy/upload/fc_big_pic/part-00601-2008.jpg',
+      'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3577173310,1161811675&fm=26&gp=0.jpg'
     ],
     autoplay: true,
     interval: 2000,
@@ -22,31 +17,31 @@ Page({
       {
         "daohanName": "周边",
         "daohanHD": [{
-          "Url": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2133494953,2639895007&fm=26&gp=0.jpg",
-            "Title": "网咖",
+          "Url": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=362165224,1394925354&fm=26&gp=0.jpg",
+            "Title": "聚一聚",
             "Text": "技术、游戏",
             "Address": "茂名市官渡市场旁边",
             "Image": [{
               "tell": "12312312312",
               "Title02": "欢迎光临",
               "TitleText": "本店24小时不打烊，欢迎前来购买",
-              "TImage": "https://blackboy.club/xiaoyuan/zhusho/chi/chi_04.jpg",
+              "TImage": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=398893782,1183773623&fm=26&gp=0.jpg",
               "imageUrl": [
-                'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3790743952531916131&fm=26&gp=0.jpg',
-                'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=323754751219249848&fm=26&gp=0.jpg',
-                'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=18448580523617544489&fm=26&gp=0.jpg',
+                'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1093528289,3833387666&fm=15&gp=0.jpg',
+                'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2002404113,3672656520&fm=26&gp=0.jpg',
+                'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=13701617,3050035410&fm=15&gp=0.jpg',
               ],
               "imageUrl2": [
-                'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3790743952531916131&fm=26&gp=0.jpg',
-                'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=323754751219249848&fm=26&gp=0.jpg',
-                'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=18448580523617544489&fm=26&gp=0.jpg',
+                'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1093528289,3833387666&fm=15&gp=0.jpg',
+                'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2002404113,3672656520&fm=26&gp=0.jpg',
+                'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=13701617,3050035410&fm=15&gp=0.jpg',
               ],
               "Text": "是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息"
             }]
           },
           {
-            "Url": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3530416731,3384837049&fm=26&gp=0.jpg",
-            "Title": "八达通网咖",
+            "Url": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2584296037,92727797&fm=26&gp=0.jpg",
+            "Title": "冲呀",
             "Text": "设计、策划、秒杀",
             "Address": "茂名市油校对面",
             "Image": [{
@@ -68,8 +63,8 @@ Page({
             }]
           },
           {
-            "Url": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2133494953,2639895007&fm=26&gp=0.jpg",
-            "Title": "皇朝农民兵",
+            "Url": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=243526842,3040939463&fm=26&gp=0.jpg",
+            "Title": "皇朝宾馆",
             "Text": "团队、游戏、竞技",
             "Address": "茂名官渡三路139",
             "Image": [{
@@ -91,7 +86,7 @@ Page({
             }]
           },
           {
-            "Url": "https://blackboy.club/xiaoyuan/zhusho/wan/wan_04.jpg",
+            "Url": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2153813961,3946062446&fm=15&gp=0.jpg",
             "Title": "龙游广场",
             "Text": "魔术、挂机",
             "Address": "茂名市中心东汇城",
@@ -434,19 +429,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   xianxi: function(res) {
+    console.log(res.currentTarget.dataset)
     wx.navigateTo({
-      url: '../../pages/xianxi/xianxi?' +
-        'url=' + res.currentTarget.dataset.url +
-        "&title=" + res.currentTarget.dataset.title +
-        "&text=" + res.currentTarget.dataset.text +
-        "&address=" + res.currentTarget.dataset.address +
-        "&imagetimage=" + res.currentTarget.dataset.imagetimage +
-        "&imagetell=" + res.currentTarget.dataset.imagetell +
-        "&imagetitle02=" + res.currentTarget.dataset.imagetitle02 +
-        "&titletext=" + res.currentTarget.dataset.titletext +
-        "&imageurl=" + res.currentTarget.dataset.imageurl +
-        "&imageurl2=" + res.currentTarget.dataset.imageurl2 +
-        "&imagetext=" + res.currentTarget.dataset.imagetext
+      url: `../../pages/xianxi/xianxi?data=${JSON.stringify(res.currentTarget.dataset)}`
     })
   },
 

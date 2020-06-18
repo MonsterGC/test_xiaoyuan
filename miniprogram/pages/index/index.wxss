@@ -198,35 +198,43 @@ swiper image {
 }
 
 .img_laba {
-  width: 30px;
-  height: 30px;
-  margin-top: 5px;
-}
-.tex_laba_view{
+  width: 48px;
+  height: 24px;
   margin-top: 10px;
   margin-left: 10px;
 }
-.tex_laba{
- font-size: 0.8rem;
-  color:#666;
+
+.tex_laba_view {
+  margin-top: 10px;
+  margin-left: 10px;
 }
-.tex_dayu{
+
+.tex_laba {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.tex_dayu {
   position: absolute;
   right: 20px;
   margin-top: 10px;
 }
-.huodon_main{
+
+.huodon_main {
   margin-top: 5px;
 }
-.huodon_main02{
-  height:150px;
+
+.huodon_main02 {
+  height: 150px;
 }
-.tex_two{
+
+.tex_two {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 }
-.two{
+
+.two {
   width: 50%;
-  background:  #e29c45;
+  background: #e29c45;
   height: 68px;
 }

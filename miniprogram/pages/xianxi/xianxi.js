@@ -28,6 +28,8 @@ Page({
       title: "数据加载中",
       mask: true
     })
+    let data = JSON.parse(options.data)
+    console.log(data)
     var address = this.data.address;
     var imagetell = this.data.imagetell;
     var imagetext = this.data.imagetext;
@@ -39,19 +41,19 @@ Page({
     var title = this.data.title;
     var titletext = this.data.titletext;
     var url = this.data.url;
-    this.setData({
-      address: options.address,
-      imagetell: options.imagetell,
-      imagetext: options.imagetext,
-      imagetimage: options.imagetimage,
-      imagetitle02: options.imagetitle02,
-      imageurl: options.imageurl.split(','),
-      imageurl2: options.imageurl2.split(','),
-      text: options.text,
-      title: options.title,
-      titletext: options.titletext,
-      url: options.url
-    })
+    // this.setData({
+    //   address: data.address,
+    //   imagetell: data.imagetell,
+    //   imagetext: data.imagetext,
+    //   imagetimage: data.imagetimage,
+    //   imagetitle02: data.imagetitle02,
+    //   imageurl: data.imageurl.split(','),
+    //   imageurl2: data.imageurl2.split(','),
+    //   text: data.text,
+    //   title: data.title,
+    //   titletext: data.titletext,
+    //   url: data.url
+    // })
     wx.setNavigationBarTitle({
       title: this.data.title,
     })

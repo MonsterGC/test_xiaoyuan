@@ -4,9 +4,9 @@ const app = getApp()
 Page({
   data: {
     imgUrls: [
-      'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3487989518,4041532767&fm=26&gp=0.jpg',
-      'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2989181225,16043011&fm=26&gp=0.jpg',
-      'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3132883761,374874891&fm=26&gp=0.jpg'
+      '../../images/bg/1.jpg',
+      '../../images/bg/2.jpg',
+      '../../images/bg/3.jpg'
     ],
     iconArray: [{
         "iconUrl": '../../images/1.png',
@@ -47,7 +47,7 @@ Page({
         "Url": "#"
       }
     ],
-    shetuan: [],
+    shetuan: ['http://img4.imgtn.bdimg.com/it/u=1392959469,3876694217&fm=11&gp=0.jpg'],
     indicatorDots: true,
     autoplay: true,
     interval: 2000,

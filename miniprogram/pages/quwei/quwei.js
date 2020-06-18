@@ -8,19 +8,19 @@ Page({
     xuan: '睡前故事',
     Ztie: [],
     iconArray: [{
-      "iconUrl": 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3900591194,3278483295&fm=26&gp=0.jpg',
+      "iconUrl": '../../images/qw/1.png',
         "iconText": '睡前故事'
       },
       {
-        "iconUrl": 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3671521614,2219232999&fm=26&gp=0.jpg',
+        "iconUrl": '../../images/qw/2.png',
         "iconText": '校园笑话'
       },
       {
-        "iconUrl": 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1611447025,3567138254&fm=26&gp=0.jpg',
+        "iconUrl": '../../images/qw/3.png',
         "iconText": '玩物区'
       },
       {
-        "iconUrl": 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2255534372,3721444615&fm=26&gp=0.jpg',
+        "iconUrl": '../../images/qw/4.png',
         "iconText": '趣味区'
       }
     ]
